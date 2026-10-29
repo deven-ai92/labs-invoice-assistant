@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "customer_id": 1049,
+    "question": "Show me my overdue Sysco invoices",
+    "expect": { "invoice_ids": ["INV-1001"] }
+  },
+  {
+    "id": 2,
+    "customer_id": 1049,
+    "question": "What is the total amount I owe?",
+    "expect": { "value": 11620.75 }
+  },
+  {
+    "id": 3,
+    "customer_id": 1049,
+    "question": "Who do I owe the most to?",
+    "expect": { "value": "Aramark" }
+  },
+  {
+    "id": 4,
+    "customer_id": 1049,
+    "question": "What is my biggest invoice?",
+    "expect": { "invoice_ids": ["INV-1003"] }
+  },
+  {
+    "id": 5,
+    "customer_id": 1049,
+    "question": "How many invoices are open?",
+    "expect": { "kind": "no_answer" }
+  },
+  {
+    "id": 6,
+    "customer_id": 1049,
+    "question": "Is this a good deal?",
+    "expect": { "kind": "no_answer" }
+  }
+]

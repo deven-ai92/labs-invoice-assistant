@@ -1,0 +1,134 @@
+{
+  "schema": {
+    "columns": [
+      {
+        "name": "invoice_id",
+        "type": "string",
+        "description": "Unique invoice identifier"
+      },
+      {
+        "name": "customer_id",
+        "type": "int",
+        "description": "The customer who owns this invoice (tenant)"
+      },
+      {
+        "name": "vendor",
+        "type": "string",
+        "description": "Vendor name on the invoice"
+      },
+      {
+        "name": "amount",
+        "type": "float",
+        "description": "Invoice amount in USD"
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "description": "one of: open, paid, overdue"
+      },
+      {
+        "name": "due_date",
+        "type": "date",
+        "description": "ISO date the invoice is due (YYYY-MM-DD)"
+      }
+    ]
+  },
+  "invoices": [
+    {
+      "invoice_id": "INV-1001",
+      "customer_id": 1049,
+      "vendor": "Sysco",
+      "amount": 4200.0,
+      "status": "overdue",
+      "due_date": "2026-08-10"
+    },
+    {
+      "invoice_id": "INV-1002",
+      "customer_id": 1049,
+      "vendor": "Sysco",
+      "amount": 980.0,
+      "status": "paid",
+      "due_date": "2026-07-01"
+    },
+    {
+      "invoice_id": "INV-1003",
+      "customer_id": 1049,
+      "vendor": "Aramark",
+      "amount": 5600.0,
+      "status": "open",
+      "due_date": "2026-09-15"
+    },
+    {
+      "invoice_id": "INV-1004",
+      "customer_id": 1049,
+      "vendor": "Aramark",
+      "amount": 320.75,
+      "status": "overdue",
+      "due_date": "2026-08-20"
+    },
+    {
+      "invoice_id": "INV-1005",
+      "customer_id": 1049,
+      "vendor": "US Foods",
+      "amount": 1500.0,
+      "status": "open",
+      "due_date": "2026-10-01"
+    },
+    {
+      "invoice_id": "INV-2001",
+      "customer_id": 2210,
+      "vendor": "Sysco",
+      "amount": 9999.0,
+      "status": "overdue",
+      "due_date": "2026-07-30"
+    },
+    {
+      "invoice_id": "INV-2002",
+      "customer_id": 2210,
+      "vendor": "Gordon",
+      "amount": 450.0,
+      "status": "paid",
+      "due_date": "2026-06-10"
+    },
+    {
+      "invoice_id": "INV-2003",
+      "customer_id": 2210,
+      "vendor": "US Foods",
+      "amount": 2750.5,
+      "status": "open",
+      "due_date": "2026-09-05"
+    },
+    {
+      "invoice_id": "INV-2004",
+      "customer_id": 2210,
+      "vendor": "Sysco",
+      "amount": 120.0,
+      "status": "open",
+      "due_date": "2026-10-12"
+    },
+    {
+      "invoice_id": "INV-3001",
+      "customer_id": 3300,
+      "vendor": "Aramark",
+      "amount": 8000.0,
+      "status": "open",
+      "due_date": "2026-09-20"
+    },
+    {
+      "invoice_id": "INV-3002",
+      "customer_id": 3300,
+      "vendor": "Gordon",
+      "amount": 640.0,
+      "status": "overdue",
+      "due_date": "2026-08-01"
+    },
+    {
+      "invoice_id": "INV-3003",
+      "customer_id": 3300,
+      "vendor": "US Foods",
+      "amount": 1200.0,
+      "status": "paid",
+      "due_date": "2026-07-18"
+    }
+  ]
+}
